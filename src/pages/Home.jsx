@@ -1,3 +1,4 @@
+import React from "react";
 import "./style.css";
 import welcome from "../assets/images/welcome.svg";
 import { Link } from "react-router-dom";
