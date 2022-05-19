@@ -28,12 +28,13 @@ export default function Home() {
         </Link>
         <br />
 
-        <a href="">
-          <div className="chip">
+
+        <Link to="/companyregistration">
+        <div className="chip">
             <div className="smallBox"></div>
             Company Account
           </div>
-        </a>
+        </Link>
       </div>
     </div>
   );

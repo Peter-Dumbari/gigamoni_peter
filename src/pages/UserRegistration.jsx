@@ -2,9 +2,13 @@ import gigmaoni from "../assets/images/gigamoni.svg";
 import userimage from "../assets/images/user-image.svg";
 import { useRef, useState, useEffect, useContext } from "react";
 import AuthContext from "../context/AuthProvider";
+import DashBoard from "./DashBoard";
 import "./style.css";
 import { Link } from "react-router-dom";
 import axios from "../api/axios";
+
+
+
 const REGISTER_URL = "api/v1/accounts/register/person/";
 const VALIDEMAIL = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 const VALIDPASSWORD = /^ (?=.* [A - Za - z])(?=.*\d)[A - Za - z\d]{ 8, }$/;
@@ -103,7 +107,8 @@ export default function UserRegistration() {
                 Already a member? <Link to="/login">Login</Link>{" "}
               </p>
               <br /> <br />
-              <button className="btn btn-success ">Register</button>
+              {/* <button className="btn btn-success">Register</button> */}
+              <Link to="/dashboard" className="btn btn-success">Register</Link>
             </form>
           </div>
         </div>
