@@ -1,7 +1,5 @@
-import Home from './pages/Home'
-import UserRegistration from './pages/UserRegistration';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Index from './pages/Index';
+import "bootstrap/dist/css/bootstrap.min.css";
+import Index from "./pages/Index";
 
 function App() {
   return (
@@ -11,4 +9,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
